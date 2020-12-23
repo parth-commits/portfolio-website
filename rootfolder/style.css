@@ -9,15 +9,50 @@ html{
   padding: 0px;
   box-sizing: border-box;
 }
-.timeline-item-title-date{
-  font-weight: 300;
-  font-size: 1vw;
-  padding-top: 15px;
-  float: right;
-  position: fixed;
-  margin-left: 87%;
-  text-align: right;
+.the-fancy-line{
+  width: 1vw;
+  left: -1.4vw;
+  top:2.5%;
+  position: absolute;
+  height: 81%;
+  margin-bottom: 15%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0vw 0.3vw 0.6vw #00000048)
 }
+
+
+.timeline-item::before{
+  top: 20px;
+  width: 2.3vw;
+  height: 2.2vw;
+  position: absolute;
+  left: -6vw;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  filter: drop-shadow(0vw 0.3vw 0.6vw #00000048)
+}
+
+
+
+
+.timeline-item-content li{
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  font-size: 1.25vw;
+}
+.timeline-item-content ul{
+  padding-left: 5%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 
 .timeline-item-content{
   border-bottom-left-radius: 10px;
@@ -25,12 +60,12 @@ html{
   width: 100%;
   padding-top: 8px;
   padding-bottom: 8px;
-  font-size: 1.2vw;
+  font-size: 20px;
   margin-bottom: 10px;
   background: #ffffff;
   color: #000000;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 0.1vw 0.5vw 0 #00000066;
   transition: color 0.5s;
 }
@@ -39,12 +74,26 @@ html{
   font-weight: 500;
   padding-bottom: 15px;
   padding-left: 15px;
-  font-size: 2vw;
+  font-size: 1.6vw;
   position: relative;
   padding-top: 15px;
   padding-right: 15px;
   text-align: left;
   justify-content: left;
+}
+
+.timeline-item-title-date{
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  padding-top: 15px;
+  float: right;
+  position: fixed;
+  right: 2%;
+  /*margin-left: 87%;*/
+  text-align: right;
 }
 
 .timeline-item-title{
@@ -68,9 +117,10 @@ html{
 .wrapper02{
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   align-items:center;
   justify-content: center;
-
+  padding-bottom: 100px;
 }
 
 /*timeline cases*/
@@ -78,33 +128,9 @@ html{
   float: left;
   border-radius: 10px;
   width: 90%;
-  height: 219px;
   margin: 10px;
-  transition: 250ms;
+  transition: 200ms;
   /*cursor: pointer;*/
-}
-
-.timeline-content-line{
-  width: 0.8vw;
-  height: 100%;
-  padding-bottom: 1.5vw;
-  padding-top: 0.5vw;
-  background: white;
-  position: relative;
-  border-radius: 1vw;
-  box-shadow: 0 0.2vw 0.5vw 0 #00000066;
-  content: "";
-}
-.timeline-content-line::before, ::after{
-  box-sizing: border-box;
-}
-
-
-.vertical-line-thing{
-  width: 15px;
-  padding:10px;
-  height: 80%;
-  background-color: white;
 }
 
 
@@ -113,6 +139,7 @@ html{
   min-height: 100vh;
   padding-left: 10%;
   padding-right: 10%;
+  position: relative;
   background: #276ED9;
   background-image: linear-gradient(to right, #b3ffea,#2e7d99);
 }
@@ -212,11 +239,7 @@ html{
   flex-wrap: wrap;
   align-items:center;
   justify-content: center;
-
 }
-
-
-
 
 
 /*software and tools cases*/
@@ -243,6 +266,7 @@ html{
 /*the nav bar uptop*/
 nav{
   display: flex;
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -253,24 +277,7 @@ nav{
 
 }
 
-/*
-.fancy-link::after{
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 10px;
-  background-color: currentColor;
 
-  transform: scaleX(0.2);
-  transform-origin: left;
-  transition: transform 250ms ease-in;
-}
-
-.fancy-link:hover::after{
-  transform: scaleX(1);
-}
-*/
 .landing{
   min-height: 100vh;
   background: url('./img/ocean sea colourful.jpg');
@@ -373,7 +380,7 @@ nav{
 .nav-links a{
   color: #2E7D99;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight:bold;
   font-size: 14px;
   cursor: pointer;
