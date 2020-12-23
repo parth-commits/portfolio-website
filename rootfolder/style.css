@@ -9,6 +9,80 @@ html{
   padding: 0px;
   box-sizing: border-box;
 }
+.timeline-item-title-date{
+  font-weight: 300;
+  font-size: 1vw;
+  padding-top: 15px;
+  float: right;
+  position: fixed;
+  margin-left: 87%;
+  text-align: right;
+}
+
+.timeline-item-content{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  transition: color 0.5s;
+}
+
+.timeline-item-title-title{
+  font-weight: 500;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 2vw;
+  position: relative;
+  padding-top: 15px;
+  padding-right: 15px;
+  text-align: left;
+  justify-content: left;
+}
+
+.timeline-item-title{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /*padding-top: 15px;*/
+  width: 100%;
+  display: grid;
+  position: relative;
+  background: white;
+  /*james values: (to left, #748bed,#75d8ef);
+  /* this makes the gradient throughout all the images background-attachment: fixed;
+  this is making the background stay on black screen position: relative;*/
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  user-select: none;
+  overflow: hidden;
+}
+
+.wrapper02{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+
+}
+
+/*timeline cases*/
+.timeline-item{
+  float: left;
+  border-radius: 10px;
+  width: 90%;
+  height: 219px;
+  margin: 10px;
+  transition: 250ms;
+  /*cursor: pointer;*/
+}
 
 .timeline-content-line{
   width: 0.8vw;
@@ -39,10 +113,8 @@ html{
   min-height: 100vh;
   padding-left: 10%;
   padding-right: 10%;
-
   background: #276ED9;
   background-image: linear-gradient(to right, #b3ffea,#2e7d99);
-  /*background-color: #b3ffea;*/
 }
 
 
