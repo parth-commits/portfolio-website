@@ -10,6 +10,65 @@ html{
   box-sizing: border-box;
 }
 
+.awards-section{
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  background: #ffffff;
+}
+
+footer ul{
+  width: fit-content;
+  float: left;
+  padding-left: 70px;
+}
+footer ul li{
+  display: inline-block;
+  list-style: none;
+}
+footer ul li a,p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+}
+
+.footer-contact{
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+  justify-content: center;
+}
+
+.contact-section{
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  background: #276ED9;
+  background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
+  overflow: hidden;
+}
+
+.footer-sm{
+  width: 35px;
+  float: right;
+}
+
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
 .button-allprojects-holder{
   transform: scale(1.2);
 }
