@@ -19,6 +19,39 @@ html{
   background: #ffffff;
 }
 
+/*awards cases*/
+.awards-item{
+  float: left;
+  border-radius: 18px;
+  width: 90%;
+  margin: 10px;
+  transition: 200ms;
+  /*cursor: pointer;*/
+}
+
+.award-item-title{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  /*padding-top: 15px;*/
+  width: 100%;
+  text-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  display: grid;
+  position: relative;
+  /*background: white;*/
+  background: #276ED9;
+  background-image: linear-gradient(to left, #2e7d99,#B3FFEA, #2e7d99);
+  /*james values: (to left, #748bed,#75d8ef);
+  /* this makes the gradient throughout all the images background-attachment: fixed;
+  this is making the background stay on black screen position: relative;*/
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  user-select: none;
+  overflow: hidden;
+}
+
+
+
 
 .contact-section{
   width: 100%;
