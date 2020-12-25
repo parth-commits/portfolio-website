@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Parth's Portfolio</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <!--the nav bar uptop-->
+        <header class="nav-bar">
+          <nav>
+            <div class="logo">
+              <a href="#">Parth Patel</a>
+            </div>
+            <ul class="nav-links">
+              <li>
+                <a class="fancy-link" href="#software">Software</a>
+              </li>
+              <li>
+                <a class="fancy-link" href="#timeline">Timeline</a>
+              </li>
+              <li>
+                <a class="fancy-link" href="#projects">Projects</a>
+              </li>
+              <li>
+                <a class="fancy-link" href="#education">Education</a>
+              </li>
+              <li>
+                <a class="fancy-link" href="#awards">Awards</a>
+              </li>
+              <li>
+                <a class="fancy-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </header>
+        <!--the intro page, says hello, im parth,, 2nd yr cs student-->
+        <div class="hello-im-parth">
+          <h2 class="big-text-hello">Hello!</h2>
+          <h2 class="big-text-im-parth">I'm Parth.</h2>
+          <h2 class="big-text-cs-student">A second year Computer Science student at the University of Toronto.</h2>
+        </div>
+      </section>
+    </main>
+
+
+
+    <!--the projects section of the website, showcases the entry point
+    to my awards section. click on the "see all projects link to see all
+     the projects"-->
+    <section class="projects-banner-section" id="projects">
+      <h2 class="sub-headings slide-in">Projects</h2>
+      <div class="wrapper03">
+          <div class="project-item fade-in">
+            <a class="project-item-logo-and-text-github" href="https://github.com/parth-commits/Coronavirus" target="_blank">
+              <div class="project-item-logo">
+                <p class="project-item-github-text">View on GitHub</p>
+                <img class="project-item-image"src="img/covidlivedata.png" alt="">
+                <img class="githubimage" src="img/github.png" alt="githubimage">
+              </div>
+            </a>
+            <div class="project-item-text">
+              COVID-19 App
+            </div>
+          </div>
+          <div class="project-item fade-in">
+            <a class="project-item-logo-and-text-github" href="https://github.com/parth-commits/portfolio-website" target="_blank">
+              <div class="project-item-logo">
+                <p class="project-item-github-text">View on GitHub</p>
+                <img class="project-item-image"src="img/website-logo.png" alt="">
+                <img class="githubimage" src="img/github.png" alt="githubimage">
+              </div>
+            </a>
+            <div class="project-item-text">
+              Portfolio Website
+            </div>
+          </div>
+          <div class="project-item fade-in">
+            <a class="project-item-logo-and-text-github" href="https://www.github.com/parth-commits" target="_blank">
+              <div class="project-item-logo">
+                <p class="project-item-github-text">View on GitHub</p>
+                <img class="project-item-image"src="img/clean-architecture-logo.png" alt="">
+                <img class="githubimage" src="img/github.png" alt="githubimage">
+              </div>
+            </a>
+            <div class="project-item-text">
+              Conference System
+            </div>
+          </div>
+      </div>
+      <div class="button-allprojects-holder">
+        <a class="button-allprojects" href="#"> See all Projects</a>
+      </div>
+
+    </section>
+
+
+    <!--the bottom footer of the website, has contact info etc.-->
+    <footer class="contact-section" id="contact">
+      <h1 class="footer-contact">CONTACT ME</h1>
+      <p class="footer-email">parthpatel.patel@mail.utoronto.ca</p>
+      <!--the links in the bottom right corner-->
+      <ul class="footer-sm">
+        <a href="mailto:parthpatel.patel@mail.utoronto.ca">
+          <img src="img/outlook.png" alt="outlook logo">
+        </a>
+        <a href="mailto:parthpatel1087@gmail.com">
+          <img src="img/gmail.png" alt="outlook logo">
+        </a>
+        <a href="https://www.linkedin.com/in/parthpatel-patel" target="_blank">
+          <img src="img/linkedin-brands.png" alt="Linkedin Logo">
+        </a>
+        <a href="https://www.github.com/parth-commits" target="_blank">
+          <img src="img/github.png" alt="Linkedin Logo">
+        </a>
+      </ul>
+    </footer>
+
+
+    <!--the timeline library to make the intron effects-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <!--the script that runs the entire system.-->
+    <script src="app.js"></script>
+  </body>
+</html>
