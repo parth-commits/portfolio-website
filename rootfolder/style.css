@@ -183,6 +183,44 @@ html{
   transition: 250ms;
   cursor: pointer;
 }
+.project-item-logo-and-text-github{
+  text-decoration: none;
+}
+.project-item-github-text{
+  transform: translateY(-100%);
+  opacity: 0;
+  font-size: 20px;
+  padding-top:10px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  font-weight: bold;
+}
+.githubimage{
+  position: absolute;
+  transform: translateY(100%);
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  opacity: 0;
+}
+.project-item-image{
+  transform: translateY(-10%);
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  opacity: 1;
+}
+
+.project-item-logo:hover .githubimage{
+  transform: translateY(0%);
+  opacity: 1;
+}
+.project-item-logo:hover .project-item-image{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.project-item-logo:hover .project-item-github-text{
+  transform: translateY(0%);
+  opacity: 1;
+}
 
 .project-item-logo{
   border-top-left-radius: 10px;
