@@ -9,76 +9,7 @@ html{
   padding: 0px;
   box-sizing: border-box;
 }
-/*
-.bubbles{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transform: translateZ(0);
-}
 
-.bubbles li{
-  position: absolute;
-  list-style: none;
-  display: block;
-  background-color: rgba(235, 235, 235, 0.15);
-  bottom: -100px;
-  animation: square 20s infinite;
-  transition-timing-function: linear;
-}
-
-.bubbles li:nth-child(1){
-  width: 40px;
-  height: 40px;
-  left: 20%;
-}
-
-.bubbles li:nth-child(2){
-  width: 60px;
-  height: 60px;
-  left: 40%;
-  animation-delay: 2s;
-  animation-duration: 17s;
-}
-
-.bubbles li:nth-child(3){
-  width: 10px;
-  height: 10px;
-  left: 60%;
-  animation-delay: 4s;
-  animation-duration: 13s;
-}
-
-.bubbles li:nth-child(4){
-  width: 80px;
-  height: 80px;
-  left: 80%;
-  animation-delay: 1s;
-  animation-duration: 22s;
-}
-
-.bubbles li:nth-child(5){
-  width: 50px;
-  height: 50px;
-  left: 50%;
-  animation-delay: 7s;
-  animation-duration: 12s;
-}
-
-@keyframes square {
-  0% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-1200px) rotate(630deg);
-    -webkit-transform: translateY(-1200px) rotate(630deg);
-  }
-}
-*/
 .timeline-item-content li{
   padding-top: 2px;
   padding-right: 5px;
@@ -868,12 +799,33 @@ nav{
 
 .landing{
   min-height: 100vh;
-  background: url('./img/ocean sea colourful.jpg');
-  background-size: cover;
-  position: center;
+  /*background: url('./img/ocean sea colourful.jpg');*/
+  background: radial-gradient(  #B3FFEA,#2e7d99);
+  background-size: 175% 175%;
+  /*position: center;*/
   display: flex;
   padding: 0rem 0rem;
+  animation: change 50s  infinite;
 }
+
+@keyframes change {
+  0% {
+    background-position: 0% 100%;
+  }
+  25% {
+    background-position: 90% 90%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  75% {
+    background-position: 0% 0%;
+  }
+  100%{
+    background-position: 0% 100%;
+  }
+}
+
 
 .logo{
   text-transform: uppercase;
@@ -897,8 +849,9 @@ nav{
   align-self: flex-end;
   bottom: 5%;
   vertical-align: middle;
-  padding-bottom: 5%;
-  padding-left: 10%;
+  padding: 10px;
+  margin-bottom: 5%;
+  margin-left: 10%;
 }
 .big-text-hello{
   font-size: 6rem;
@@ -920,6 +873,7 @@ nav{
 .intro{
   background: black;
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -937,7 +891,9 @@ nav{
 
 .slider{
   background: #7bb6cc;
+  background-image: linear-gradient(to right, #b3ffea,#2e7d99);
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -955,6 +911,31 @@ nav{
   display: inline-block;
 }
 
+.fancy-link::after{
+  content: '';
+  display: block;
+  width: 100%;
+  margin-top: 2px;
+  transform: scaleX(0);
+  /*position: absolute;*/
+  height: 3px;
+  background: #2E7D99;
+  transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after{
+  transform: scaleX(1);
+}
+
+.fancy-link{
+  color: #2E7D99;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight:bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .nav-links{
   display: flex;
   justify-content: space-around;
@@ -964,15 +945,10 @@ nav{
 .nav-links li{
   list-style: none;
 }
-
+/*
 .nav-links a{
-  color: #2E7D99;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-weight:bold;
-  font-size: 14px;
-  cursor: pointer;
-}
+
+}*/
 
 .burger {
   display: none;
