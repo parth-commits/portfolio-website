@@ -10,6 +10,252 @@ html{
   box-sizing: border-box;
 }
 
+.timeline-item-content li{
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  font-size: 1.25vw;
+}
+.timeline-item-content ul{
+  padding-left: 5%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+
+.timeline-item-content1{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  transition: color 0.5s;
+}
+
+.project-item-content{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  font-size: 20px;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  transition: color 0.5s;
+}
+
+.project-item-title{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /*padding-top: 15px;*/
+  width: 100%;
+  text-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  display: grid;
+  position: relative;
+  /*background: white;*/
+  background: #276ED9;
+  background-image: linear-gradient(to right, #b3ffea,#2e7d99);
+  background-attachment: fixed;
+  /*james values: (to left, #748bed,#75d8ef);
+  /* this makes the gradient throughout all the images background-attachment: fixed;
+  this is making the background stay on black screen position: relative;*/
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  user-select: none;
+  overflow: hidden;
+}
+
+
+.project-item-main-description li{
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  font-size: 1.25vw;
+}
+
+.project-item-main-description{
+
+  padding-left: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  position: absolute;
+  top: 45px;
+  width: 70%;
+  transform: translateX(20vw);
+  font-size: 2vh;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  font-weight: 400;
+}
+
+.youtube-popout-thing img{
+  position: absolute;
+  right: 1vw;
+  bottom: 3vh;
+  width: 5vw;
+  transition: transform 600ms;
+}
+
+.youtube-popout-thing p{
+  position: absolute;
+  text-decoration: none;
+  transform: translateX(50px);
+  opacity: 0;
+  bottom: 2vw;
+  right: 6vw;
+  padding-top: 15px;
+  font-size: 1vw;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  font-weight: 200;
+}
+
+.youtube-popout-thing:hover p{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.youtube-popout-thing:hover img{
+  transform: rotate(360deg);
+}
+
+.project-item-main-title{
+  position: absolute;
+  top: 0px;
+  transform: translateX(250px);
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 30px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  font-weight: bold;
+}
+
+.project-item-main-date{
+  position: absolute;
+  top: 0px;
+  right:0px;
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  font-weight: 200;
+}
+
+/*The code for the logo thing*/
+
+.project-item-main-logo-and-text-github{
+  text-decoration: none;
+  width: 600px;
+  display:inline-block
+}
+
+/*
+.project-item-github-text1{
+  transform: translateY(-100%);
+  opacity: 0;
+  font-size: 1vw;
+  padding-top:10px;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  font-weight: bold;
+}*/
+.githubimage{
+  position: absolute;
+  transform: translateY(100%);
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  opacity: 0;
+}
+.project-item-image{
+  transform: translateY(0%);
+  transition: opacity 400ms ease-in, transform 400ms ease-out;
+  opacity: 1;
+}
+
+.project-item-main-logo:hover .githubimage{
+  transform: translateY(0%);
+  opacity: 1;
+}
+.project-item-main-logo:hover .project-item-image{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.project-item-main-logo:hover .project-item-github-text{
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.project-item-main-logo{
+  border-bottom-left-radius: 20px;
+  padding-right: 7px;
+  width: 20vw;
+  height: 25vw;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateX(0px);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #276ED9;
+  background-image: linear-gradient(to right, #b3ffea,#2e7d99);
+  background-attachment: fixed;
+  /*
+  /* this makes the gradient throughout all the images background-attachment: fixed;
+  this is making the background stay on black screen position: relative;*/
+  /*box-shadow: 0 0.1vw 0.5vw 0 #00000066;*/
+  user-select: none;
+  overflow: hidden;
+}
+
+.project-item-main-logo img{
+  width: 100%;
+  padding: 10%;
+  filter: drop-shadow(0px 0.3vw 0.6vw #00000083);
+}
+
+
+/*The code for the logo thing ends here*/
+
+
+
+.project-main-site-item{
+  float: left;
+  border-radius: 18px;
+  width: 100%;
+  margin: 10px;
+  transition: 200ms;
+
+  /*float: center;
+  width: 100%;
+  height: 315px;
+  border-radius: 20px;
+  margin: 10px;
+  transition: 250ms;
+  background-color: white;
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  position: relative;*/
+}
+
+
+
 .awards-section{
   width: 100%;
   min-height: 100vh;
