@@ -313,7 +313,7 @@ html{
 }
 
 .footer-email {
-    font-size: 26px;
+    font-size: 2vw;
     text-align: center;
     padding-bottom: 7px;
     padding-top: 14px;
@@ -326,7 +326,7 @@ html{
   text-align:center;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 600;
 }
 
@@ -847,6 +847,7 @@ nav{
   font-family: 'Roboto', sans-serif;
   display: inline-block;
   align-self: flex-end;
+  width: 100%;
   bottom: 5%;
   vertical-align: middle;
   padding: 10px;
@@ -865,7 +866,7 @@ nav{
 .big-text-cs-student{
   font-weight: lighter;
   padding-left: 15px;
-  font-size: 25px;
+  font-size: 2rem;
   letter-spacing: 2px;
   color: white;
 }
