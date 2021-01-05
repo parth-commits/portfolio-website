@@ -6,5 +6,5 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 # for software
 RewriteEngine on
 RewriteCond %{software} !-d
-RewriteCond %{index.html#software}\.html -f
+RewriteCond %{index.html}\.html{software} -f
 RewriteRule ^(.*)$ $1.html [NC,L]
