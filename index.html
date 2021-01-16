@@ -530,21 +530,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <!--the script that runs the entire system.-->
     <script src="app.js"></script>
-    <!--<script type="text/javascript">
-      function createBubble(){
-        const section = document.querySelector('bubbles')
-        const createElement = document.createElement('span')
-        var size = Math.random() *60;
 
-        createElement.style.width = size + 'px';
-        createElement.style.height = size + 'px';
-        createElement.style.left = Math.random() * innerWidth + 'px';
-        section.appendChild(createElement);
-
-        setTimeout(() => {
-          createElement.remove()
-        }, 4000)
-      }
-    </script>-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "portfolioparth@gmail.com",
+        Password : "A7EB0927431A946C23FE9ED9C1633EED34C6",
+        To : 'portfolioparth@gmail.com',
+        From : "portfolioparth@gmail.com",
+        Subject : "Someone was on my website!",
+        Body : "Someone was on my website!"
+      });
+    </script>
   </body>
 </html>
