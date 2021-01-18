@@ -542,7 +542,25 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-    Email.send({
+    let myip;
+
+    fetch('https://api.ipify.org/?format=json').then(results => results.json())
+    .then(data => {
+      myip = data.ip;
+      fetch('http://ip-api.com/json/184.145.52.145').then(results => results.json())
+      .then(data => Email.send({
+          Host : "smtp.elasticemail.com",
+          Username : "portfolioparth@gmail.com",
+          Password : "A7EB0927431A946C23FE9ED9C1633EED34C6",
+          To : 'portfolioparth@gmail.com',
+          From : "portfolioparth@gmail.com",
+          Subject : "Someone was on my website!",
+          Body : data
+        }));
+      console.log(myip);
+    });
+
+    /*Email.send({
         Host : "smtp.elasticemail.com",
         Username : "portfolioparth@gmail.com",
         Password : "A7EB0927431A946C23FE9ED9C1633EED34C6",
@@ -550,7 +568,7 @@
         From : "portfolioparth@gmail.com",
         Subject : "Someone was on my website!",
         Body : "Someone was on my website!"
-      });
+      });*/
     </script>
   </body>
 </html>
