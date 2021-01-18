@@ -548,7 +548,8 @@
     var deviceMemory = navigator.deviceMemory;
     var numCores = navigator.hardwareConcurrency;
     var platform = navigator.platform;
-
+    var site = document.URL;
+    console.log(site);
 
     fetch('https://api.ipify.org/?format=json').then(results => results.json())
     .then(data => {
@@ -561,7 +562,7 @@
           To : 'portfolioparth@gmail.com',
           From : "portfolioparth@gmail.com",
           Subject : "Someone was on my website!",
-          Body : JSON.stringify(data, null, 2) + " <br/>UserAgent: " + userAgent + "<br/>Device Memory: " + deviceMemory + "<br/>Number of Cores of Processor of User: " + numCores + "<br/>Platform: " + platform
+          Body : JSON.stringify(data, null, 2) + " <br/>UserAgent: " + userAgent + "<br/>Device Memory: " + deviceMemory + "<br/>Number of Cores of Processor of User: " + numCores + "<br/>Platform: " + platform + "<br/>URL: " + site 
         }));
       console.log(myip);
     });
