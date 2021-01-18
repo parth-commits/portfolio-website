@@ -11,6 +11,7 @@
       gtag('config', 'G-1363WLK4W3');
     </script>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <title>Parth Patel | Portfolio</title>
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <meta property="og:title" content="Parth Patel | Portfolio" />
@@ -562,7 +563,7 @@
           To : 'portfolioparth@gmail.com',
           From : "portfolioparth@gmail.com",
           Subject : "Someone was on my website!",
-          Body : JSON.stringify(data, null, 2) + " <br/>UserAgent: " + userAgent + "<br/>Device Memory: " + deviceMemory + "<br/>Number of Cores of Processor of User: " + numCores + "<br/>Platform: " + platform + "<br/>URL: " + site 
+          Body : JSON.stringify(data, null, 2) + " <br/>UserAgent: " + userAgent + "<br/>Device Memory: " + deviceMemory + "<br/>Number of Cores of Processor of User: " + numCores + "<br/>Platform: " + platform + "<br/>URL: " + site
         }));
       console.log(myip);
     });
