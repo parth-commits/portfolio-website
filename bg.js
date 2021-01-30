@@ -1,5 +1,5 @@
-const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 6,
-      STAR_SIZE = 2,
+const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 4,
+      STAR_SIZE = 4,
       STAR_MIN_SCALE = 0.2,
       OVERFLOW_THRESHOLD = 50;
 
@@ -15,7 +15,7 @@ let stars = [];
 let pointerX,
     pointerY;
 
-let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.001 };
 
 let touchInput = false;
 

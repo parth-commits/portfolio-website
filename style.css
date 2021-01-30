@@ -962,13 +962,14 @@ nav{
 .landing{
   min-height: 100vh;
   width: 100%;
+  /* linear-gradient(to right, #b3ffea,#2e7d99);*/
   /*background: url('./img/ocean sea colourful.jpg');*/
-  background: radial-gradient(  #B3FFEA,#2e7d99);
+  background: radial-gradient(  #84CDC7,#256880);
   background-size: 175% 175%;
   /*position: center;*/
   display: flex;
   padding: 0rem 0rem;
-  animation: change 50s  infinite;
+  animation: change 25s  infinite;
 }
 
 @keyframes change {
