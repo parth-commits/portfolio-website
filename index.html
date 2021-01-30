@@ -565,7 +565,7 @@
     fetch('https://api.ipify.org/?format=json').then(results => results.json())
     .then(data => {
       myip = data.ip;
-    if (myip != "184.145.52.145") {
+    if (myip != "184.145.53.131") {
         fetch('https://ipapi.co/'+myip+'/json/').then(results => results.json())
         .then(data => Email.send({
             Host : "smtp.gmail.com",
