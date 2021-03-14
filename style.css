@@ -1128,6 +1128,69 @@ nav{
   transition: all 0.2s ease;
 }
 
+
+.mobile{
+
+    /*border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
+    height: 100vh;
+    min-width: 100%;
+    font-size: 20px;
+    background: #276ED9;
+    width: inherit;
+    background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
+    background-attachment: fixed;
+    /*margin-bottom: 10px;*/
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+.mobile-img img{
+  padding-top: 10vh;
+  background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
+  background-attachment: fixed;
+  max-width: 20%;
+  /*height: 25vh;*/
+}
+
+.oh-no{
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  font-size: 30vw;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
+  background-attachment: fixed;
+}
+
+.on-mobile{
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
+  background-attachment: fixed;
+  font-size: 7vw;
+  font-weight: 300;
+}
+.footer-sm1 img{
+  max-width: 55px;
+  max-height: 55px;
+  padding: 10px;
+  opacity: 0.5;
+  float: left;
+}
+.footer-sm1{
+  display: none;
+  float: center;
+  padding-top: 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: inline-block;
+  align-items: center;
+}
 @media screen and (max-width:1500px){
   .nav-links{
     width: 60%;
@@ -1138,7 +1201,81 @@ nav{
   body{
     overflow-x: hidden;
   }
-  .nav-links{
+
+  .contact-section{
+    display: none;
+    /*width: 100%;
+    min-height: 20vh;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    background: #276ED9;
+    background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
+    overflow: hidden;*/
+  }
+/*
+  .footer-email {
+    display: none;
+      font-size: 2vw;
+      text-align: center;
+      padding-bottom: 7px;
+      padding-top: 14px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      user-select: all;
+  }
+
+  .footer-contact{
+    display: none;
+    text-align:center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 600;
+  }
+
+  .footer-sm{
+    display: none;
+    float: center;
+    padding-top: 15px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: inline-block;
+    align-items: center;
+  }*/
+
+
+
+
+  .slider{
+    display: none;
+  }
+
+  .software-and-tools{
+    display: none;
+  }
+  .timeline-section{
+    display: none;
+  }
+  .projects-banner-section{
+    display: none;
+  }
+  .timeline-section{
+    display: none;
+  }
+  .awards-section{
+    display: none;
+  }
+  .main-01{
+    display: none;
+  }
+  .blobsArea{
+    display: none;
+  }
+  /*.nav-links{
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -1170,7 +1307,7 @@ nav{
   }
   .software-and-tools {
     padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 1%;*/
 }
 }
 
