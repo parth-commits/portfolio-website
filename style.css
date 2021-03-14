@@ -1130,9 +1130,7 @@ nav{
 
 
 .mobile{
-
-    /*border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;*/
+    display: none;
     height: 100vh;
     min-width: 100%;
     font-size: 20px;
@@ -1202,52 +1200,12 @@ nav{
     overflow-x: hidden;
   }
 
+  .mobile{
+      display: block;
+  }
   .contact-section{
     display: none;
-    /*width: 100%;
-    min-height: 20vh;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
-    position: relative;
-    background: #276ED9;
-    background-image: linear-gradient(to right, #2E7D99,#5AA8B4);
-    overflow: hidden;*/
   }
-/*
-  .footer-email {
-    display: none;
-      font-size: 2vw;
-      text-align: center;
-      padding-bottom: 7px;
-      padding-top: 14px;
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      user-select: all;
-  }
-
-  .footer-contact{
-    display: none;
-    text-align:center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2vw;
-    font-weight: 600;
-  }
-
-  .footer-sm{
-    display: none;
-    float: center;
-    padding-top: 15px;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    display: inline-block;
-    align-items: center;
-  }*/
-
-
 
 
   .slider{
