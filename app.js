@@ -68,3 +68,12 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+const cookie = document.querySelector("cookies");
+const cookiebutton = document.querySelector("button01");
+cookiebutton.addEventListener("click", ()=>{
+  cookie.classList.remove("active");
+});
+setTimeout( () => {
+  cookie.classList.add("active");
+}, 2000);

@@ -1189,6 +1189,53 @@ nav{
   display: inline-block;
   align-items: center;
 }
+.cookies{
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fc4e4e;
+  min-height: 6vh;
+  bottom: -100px;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  width: 100%;
+  z-index: 12;
+  transition: 400ms;
+}
+.cookies img{
+  right: 10px;
+  height: 4vh;
+  top: 1vh;
+  position: absolute;
+  transform: scale(0.5);
+}
+.cookies.active{
+  bottom: 0px;
+}
+.button01{
+  cursor: pointer;
+}
+
+/*
+.nav-bar{
+  position: fixed;
+  z-index: 12;
+}
+
+nav{
+  display: flex;
+  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  min-height: 8vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFF;
+
+}
+*/
 @media screen and (max-width:1500px){
   .nav-links{
     width: 60%;
