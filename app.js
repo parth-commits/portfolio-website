@@ -70,10 +70,16 @@ sliders.forEach(slider => {
 });
 
 const cookie = document.querySelector("cookies");
-const cookiebutton = document.querySelector("button01");
-cookiebutton.addEventListener("click", ()=>{
+const cookieButton = document.querySelector("button01");
+
+cookieButton.addEventListener("click", () => {
   cookie.classList.remove("active");
+  //localStorage.setItem("cookieBannerDisplayed", "true");
 });
+/*
+cookiebutton.addEventListener("click", () => {
+  cookie.classList.remove("active");
+});*/
 setTimeout( () => {
   cookie.classList.add("active");
 }, 2000);
