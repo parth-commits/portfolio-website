@@ -1203,6 +1203,9 @@ nav{
   z-index: 12;
   transition: 400ms;
 }
+.cookies.active {
+  bottom: 0;
+}
 .cookies img{
   right: 10px;
   height: 4vh;
@@ -1217,25 +1220,10 @@ nav{
   cursor: pointer;
 }
 
-/*
-.nav-bar{
-  position: fixed;
-  z-index: 12;
+.button01 img{
+  top: 2vh;
 }
 
-nav{
-  display: flex;
-  box-shadow: 0 0.1vw 0.5vw 0 #00000066;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  position: fixed;
-  min-height: 8vh;
-  font-family: 'Roboto', sans-serif;
-  background-color: #FFF;
-
-}
-*/
 @media screen and (max-width:1500px){
   .nav-links{
     width: 60%;
@@ -1246,19 +1234,19 @@ nav{
   body{
     overflow-x: hidden;
   }
-
+  .button01 img{
+    top: auto;
+    bottom: 1vh;
+  }
   .mobile{
       display: block;
   }
   .contact-section{
     display: none;
   }
-
-
   .slider{
     display: none;
   }
-
   .software-and-tools{
     display: none;
   }

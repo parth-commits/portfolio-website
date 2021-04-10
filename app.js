@@ -69,6 +69,23 @@ sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
 
+
+const cookieContainer = document.querySelector(".cookies");
+const cookieButton = document.querySelector(".button01");
+
+cookieButton.addEventListener("click", () => {
+  cookieContainer.classList.remove("active");
+  localStorage.setItem("cookieBannerDisplayed", "true");
+});
+
+setTimeout(() => {
+  //if (!localStorage.getItem("cookieBannerDisplayed")) {
+    cookieContainer.classList.add("active");
+  //}
+}, 1000);
+
+
+/*
 const cookie = document.querySelector("cookies");
 const cookieButton = document.querySelector("button01");
 
@@ -79,7 +96,7 @@ cookieButton.addEventListener("click", () => {
 /*
 cookiebutton.addEventListener("click", () => {
   cookie.classList.remove("active");
-});*/
+});
 setTimeout( () => {
   cookie.classList.add("active");
-}, 2000);
+}, 2000);*/
